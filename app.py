@@ -6,5 +6,10 @@ app = Flask(__name__)
 def home():
     return "Hello, Flask! This is the main branch."
 
+@app.route("/about")
+def about():
+    return "Welcome to the About Page! - Contributed by Behrouz ACN"
+
+
 if __name__ == "__main__":
     app.run(debug=True)
